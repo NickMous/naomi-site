@@ -29,6 +29,10 @@ body {
     font-size: 40px;
 }
 
+.naamtitelim {
+    font-size: 30px !important;
+}
+
 .navbar {
     display: flex;
     width: 100%;
@@ -36,6 +40,15 @@ body {
     background-color: #FFC300;
     padding: 1%;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky + .navbar {
+    padding-top: 60px;
+  }
 
 .navlink {
     color: black;
@@ -76,4 +89,16 @@ body {
 
 .ruimte {
     margin: 30px;
+}
+
+.footer {
+    margin-top: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;;
+    background-color: #FFC300;
 }
