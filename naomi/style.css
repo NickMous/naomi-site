@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'sans-light';
+    src: url('fonts/OpenSans-Light.ttf');
+}
+
+body {
+    font-family: 'OpenSans-Regular';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.invisible {
+    display: none;
+}
+
+.topbar {
+    padding: 0 1%;
+}
+
+.naamtitel {
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #FFC300;
+    padding: 1%;
+}
+
+.navlink {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.item {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eerste {
+    margin-top: 80px;
+}
+
+.rest {
+    margin-top: 40px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.knoppen {
+    width: auto;
+    padding: 8px;
+}
+
+[class*="button"] {
+    border: none;
+    background-color: rgb(161, 161, 161);
+    font-size: 30px;
+    font-family: sans-light;
+}
+
+.ruimte {
+    margin: 30px;
+}
