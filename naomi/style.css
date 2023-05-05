@@ -26,6 +26,10 @@ body {
     padding: 0 1%;
 }
 
+.top {
+    max-width: 60%;
+}
+
 .naamtitel {
     font-size: 40px;
     margin-bottom: 5px;
@@ -41,6 +45,8 @@ body {
     justify-content: space-around;
     background-color: #FFC300;
     padding: 1%;
+    position: sticky;
+    top: 0;
 }
 
 .sticky {
@@ -59,10 +65,12 @@ body {
 }
 
 .item {
-    text-align: center;
+    text-align: left;
     width: 60%;
     display: flex;
     flex-direction: column;
+    /* justify-content: start; */
+    align-items: start;
 }
 
 .eerste {
@@ -78,19 +86,22 @@ p {
 }
 
 .knoppen {
-    width: auto;
-    padding: 8px;
+    padding: 0;
+}
+
+button {
+    padding: 0;
 }
 
 [class*="button"] {
     border: none;
-    background-color: rgb(161, 161, 161);
+    background: inherit;
     font-size: 30px;
-    font-family: sans-light;
+    /* font-family: sans-light; */
 }
 
 .ruimte {
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .footer {
@@ -102,7 +113,6 @@ p {
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 10px;
-    ;
     background-color: #FFC300;
 }
 
@@ -119,6 +129,7 @@ p {
 .consulten {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: start;
     text-align: center;
@@ -160,7 +171,7 @@ p {
     border-radius: 100%;
     display: inline-block;
     margin: 10px;
-    padding: 45px 20px;
+    padding: 55px 20px;
 }
 
 .consulten a:nth-child(5) {
@@ -173,4 +184,52 @@ p {
 
 .picture {
     max-width: 300px;
+}
+
+.text1 {
+    margin-top: 0px;
+}
+
+.eerstetext {
+    margin-top: 70px;
+}
+
+.contacttext {
+    margin: 5px 0;
+}
+
+.insta {
+    text-decoration: none;
+    color: purple;
+}
+
+.eerste img {
+    margin: 0 40px;
+}
+
+.abmef1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 60%;
+}
+
+.abmef2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.abmef1 img {
+    max-width: 350px;
+}
+
+.abmef1 h1 {
+    font-size: 80px;
+}
+
+.abmef2 h2 {
+    font-size: 50px;
+    max-width: 500px;
 }
