@@ -20,10 +20,13 @@
         </div>
     </div>
     <nav class="navbar">
-        <a href="index.html" class="navlink">Home</a>
-        <a href="consulten.html" class="navlink">Consulten</a>
-        <a href="overmij.html" class="navlink">Over Mij</a>
-        <a href="contact.html" class="navlink">Contact</a>
+        <a href="javascript:void(0);" class="menubtn dikgedrukt" onclick="show()">Menu</a>
+        <div class="dropdown">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="consulten.html" class="navlink">Consulten</a>
+            <a href="overmij.html" class="navlink">Over Mij</a>
+            <a href="contact.html" class="navlink">Contact</a>
+        </div>
     </nav>
     <div class="item eerste consult">
         <h1>Consulten</h1>
@@ -31,7 +34,7 @@
             ook bij aangegeven, dit is altijd afhankelijk van wat een dier op dat moment aankan. Ik ga nooit langer door
             dan een dier wilt, de prijs wordt daar niet op aangepast. </p>
     </div>
-    <div class="item">
+    <div class="item" id="kinesiologie">
         <p class="dikgedrukt">Basisconsult kinesiologie</p>
         <p>
             Heeft jouw dier last van onrust, spijsverteringsklachten, reageert het heftig op andere dieren en mensen,
@@ -45,7 +48,7 @@
         <p>Op basis van de uitkomst van de test start ik de behandeling.</p>
         <p>Dit consult duurt ca 60-90 minuten en kost € 80.</p>
     </div>
-    <div class="item">
+    <div class="item" id="energetisch">
         <p class="dikgedrukt">Basisconsult energetisch</p>
         <p>
             Heb jij het gevoel niet te snappen wat je paard je duidelijk probeert te maken? Raakt je paard uit balans
@@ -60,7 +63,7 @@
         </p>
         <p>Dit consult duurt ca 60-90 minuten en kost € 80.</p>
     </div>
-    <div class="item">
+    <div class="item" id="vervolg">
         <p class="dikgedrukt">Vervolgconsult</p>
         <p>
             Dit consult is bedoelt voor alle klachten waar jouw dier al voor behandelt wordt. Een vervolgconsult vindt
@@ -69,7 +72,7 @@
         </p>
         <p>Dit consult duurt ca 45 minuten en kost € 65.</p>
     </div>
-    <div class="item">
+    <div class="item" id="aroma">
         <p class="dikgedrukt">Aromaconsult</p>
         <p>
             Dit is een extra optie die zowel bij een basis- als vervolgconsult geboekt kan worden. Na het consult laat
@@ -78,7 +81,7 @@
         </p>
         <p>Dit consult duurt 15-20 minuten extra en kost € 25.</p>
     </div>
-    <div class="item">
+    <div class="item" id="mensdier">
         <p class="dikgedrukt">Mens-dier consult</p>
         <p>
             Tijdens dit consult ga ik samen met mijn collega kinesioloog aan het werk om eventuele disbalans bij zowel

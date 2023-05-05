@@ -8,6 +8,13 @@
     src: url('fonts/OpenSans-Light.ttf');
 }
 
+.menubtn {
+    display: none;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 body {
     width: 100%;
     font-family: 'OpenSans-Regular';
@@ -47,6 +54,12 @@ body {
     padding: 1%;
     position: sticky;
     top: 0;
+}
+
+.dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .sticky {
@@ -201,26 +214,23 @@ button {
 .insta {
     text-decoration: none;
     background-color: rgb(209, 0, 255);
-    background-image: linear-gradient(90deg, rgba(209,0,255,1) 0%, rgba(232,0,149,1) 100%);
+    background-image: linear-gradient(90deg, rgba(209, 0, 255, 1) 0%, rgba(232, 0, 149, 1) 100%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-
-.eerste img {
-    margin: 0 40px;
 }
 
 .abmef1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
-    width: 60%;
+    justify-content: space-between;
+    min-width: 60%;
 }
+
 
 .abmef2 {
     display: flex;
@@ -236,11 +246,89 @@ button {
     font-size: 80px;
 }
 
-.abmef2 h2, .consult h1 {
+.abmef2 h2,
+.consult h1 {
     font-size: 50px;
-    max-width: 500px;
+    max-width: 550px;
+    min-width: 400px;
 }
 
 .dikgedrukt {
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+    div.dropdown {
+        display: none;
+        transition: all 1s ease-in-out;
+    }
+
+    nav.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.dropdown {
+        flex-direction: column;
+        transition: all 1s ease-in-out;
+    }
+
+    nav.navbar a {
+        margin: 10px 0 10px 20px;
+    }
+
+    .abmef1 h1 {
+        font-size: 50px;
+    }
+
+    .abmef1,
+    .abmef2 {
+        max-width: 350px;
+    }
+
+    .abmef2 h2 {
+        font-size: 30px;
+        max-width: 350px;
+    }
+
+    .abmef1 img {
+        max-width: 300px;
+    }
+
+    .item {
+        text-align: left;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: start; */
+        align-items: start;
+    }
+
+    .footerdiv {
+        max-width: 80%;
+    }
+
+    .menubtn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .consulten {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .abmef1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 60%;
+    }
 }
